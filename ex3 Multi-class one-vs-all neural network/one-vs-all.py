@@ -1,6 +1,6 @@
 # coding=utf-8
 """
-func: 多分类，使用逻辑回归来识别手写数字（0到9），依旧是多元线性拟合
+func: 多分类，使用逻辑回归来识别手写数字（0到9），多元线性拟合(正则化)，一对多
 note: 数据是MATLAB的本机格式 ex3data1.mat
 copyright: https://github.com/ydduong/Coursera-ML-AndrewNg-Notes/blob/master/code/ex3-neural%20network/ML-Exercise3.ipynb
 """
@@ -120,10 +120,10 @@ if __name__ == "__main__":
     print(f'cost: {cost(_theta, _x, _y_0, _lr)}')
 
     # 测试 gradient
-    grad = gradient_loop(_theta, _x, _y_0, _lr)
-    print(f'gradient: {len(grad)}, {grad[0]}')
-    grad = gradient(_theta, _x, _y_0, _lr)
-    print(f'gradient: {len(grad)}, {grad[0]}')
+    _grad = gradient_loop(_theta, _x, _y_0, _lr)
+    print(f'gradient: {len(_grad)}, {_grad[0]}')
+    _grad = gradient(_theta, _x, _y_0, _lr)
+    print(f'gradient: {len(_grad)}, {_grad[0]}')
 
     # 测试 one_vs_all
     _all_theta = one_vs_all(_data['X'], _data['y'], 10, _lr)
@@ -131,8 +131,8 @@ if __name__ == "__main__":
     # 测试 标签0的训练结果
     _theta = _all_theta[0, :]
     print(f'cost: {cost(_theta, _x, _y_0, _lr)}')
-    grad = gradient_loop(_theta, _x, _y_0, _lr)
-    print(f'gradient: {len(grad)}, {grad[0]}')
+    _grad = gradient_loop(_theta, _x, _y_0, _lr)
+    print(f'gradient: {len(_grad)}, {_grad[0]}')
 
     # 预测
     # 前向计算
