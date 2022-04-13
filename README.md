@@ -2,8 +2,6 @@
 
 > 参考：[https://github.com/fengdu78/Coursera-ML-AndrewNg-Notes](https://github.com/fengdu78/Coursera-ML-AndrewNg-Notes)
 
-学习笔记
-
 ### ex1 线性回归（类似预测房价，多项式拟合）
 
 - 一元线性回归
