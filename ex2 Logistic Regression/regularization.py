@@ -1,7 +1,6 @@
 # coding= utf-8
 """
 func: 逻辑回归，实现二分类，添加正则化（即重新写损失函数计算和梯度求导）
-copyright: https://github.com/ydduong/Coursera-ML-AndrewNg-Notes/blob/master/code/ex2-logistic%20regression/ML-Exercise2.ipynb
 note: 坐标点和类别，使用sigmoid函数对输出的结果做二分类
 other: 如何画出边界线？
 """

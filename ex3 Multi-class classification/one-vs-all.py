@@ -2,7 +2,6 @@
 """
 func: 多分类，使用逻辑回归来识别手写数字（0到9），多元线性拟合(正则化)，一对多
 note: 数据是MATLAB的本机格式 ex3data1.mat
-copyright: https://github.com/ydduong/Coursera-ML-AndrewNg-Notes/blob/master/code/ex3-neural%20network/ML-Exercise3.ipynb
 """
 
 import numpy as np

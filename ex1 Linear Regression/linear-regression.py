@@ -1,7 +1,6 @@
 # coding=utf-8
 """
 func: 一元线性回归
-copyright：https://github.com/ydduong/Coursera-ML-AndrewNg-Notes/blob/master/code/ex1-linear%20regression/ML-Exercise1.ipynb
 note: 使用梯度下降来实现线性回归; 归回方程(theta和x都是列向量): y' = theta_T * x; 损失函数采用均方误差：之差平方求和再除以2m
 """
 
